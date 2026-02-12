@@ -49,13 +49,13 @@ nav {
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition: color 0.3s ease;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .nav-links li a:hover {
-  color: white;
+  color: rgb(226, 7, 7);
 }
 
 /* Book a Meeting Button */
@@ -218,4 +218,45 @@ nav {
   .Hero p {
     font-size: 16px;
   }
+}
+
+/* ========== SEARCH BAR SECTION ========== */
+.search-bar {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+  background-image: url("background.jpg");
+}
+.search-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-content input {
+  padding: 12px 20px;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.search-content input:focus {
+  border-color: #fdb913;
+  outline: none;
+  box-shadow: 0 0 10px rgba(232, 6, 6, 0.5);
+}
+.search-btn {
+  background-color: #fdb913;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 25px;
+}
+.search-btn:hover {
+  background-color: #ef0606;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(253, 185, 19, 0.4);
+  color: #000;
+}
+.search-content input::placeholder {
+  color: #999;
 }
