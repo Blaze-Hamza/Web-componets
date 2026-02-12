@@ -1,0 +1,221 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ========== NAVBAR STYLES ========== */
+.Navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.logo h1 {
+  color: rgba(255, 255, 255, 0.646);
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: white;
+}
+
+/* Book a Meeting Button */
+.btn-link {
+  background-color: #fdb913;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-link:hover {
+  background-color: #ffc933;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(253, 185, 19, 0.4);
+  color: #000;
+}
+
+/* ========== HERO SECTION ========== */
+.Hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Dark overlay */
+.Hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.Hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+}
+
+.Hero h4 {
+  color: #fdb913;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Hero h1 {
+  font-family: "Caveat", cursive;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.646);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.Hero h1 .highlight {
+  color: #fdb913;
+  display: block;
+}
+
+.Hero h5 {
+  font-family: "Doto", sans-serif;
+  font-size: 24px;
+  color: #fdb913;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.Hero p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  margin-bottom: 100px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+/* CTA Button */
+.btn {
+  background-color: #fdb913;
+  color: #000;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #ef0606;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(253, 185, 19, 0.5);
+}
+
+/* Bottom Stats Section */
+.Hero h5:last-child {
+  margin-bottom: 0px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .Hero h1 {
+    font-size: 60px;
+  }
+
+  .Hero h5 {
+    font-size: 18px;
+  }
+
+  .Hero p {
+    font-size: 16px;
+  }
+}
