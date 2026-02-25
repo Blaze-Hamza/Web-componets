@@ -8,6 +8,7 @@
 body {
   font-family: "Bebas Neue", sans-serif;
   overflow-x: hidden;
+  background-color: #000000;
 }
 
 /* ========== NAVBAR STYLES ========== */
@@ -45,184 +46,106 @@ nav {
 }
 
 .nav-links li a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(194, 193, 193, 0.8);
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
   transition: color 0.3s ease;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "jura", sans-serif;
 }
 
 .nav-links li a:hover {
-  color: rgb(226, 7, 7);
+  color: #d1b652;
 }
 
 /* Book a Meeting Button */
 .btn-link {
-  background-color: #fdb913;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
   padding: 12px 28px;
-  border-radius: 25px;
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: "Poppins", sans-serif;
 }
 
 .btn-link:hover {
-  background-color: #ffc933;
+  background-color: #fcfbf8;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(253, 185, 19, 0.4);
   color: #000;
 }
-
-/* ========== HERO SECTION ========== */
+/*herosection*/
+/* herosection */
 .Hero {
-  position: relative;
-  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 0 20px;
-  background-image: url("background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  justify-content: flex-end;
+  min-height: 100vh;
+  padding: 0 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
 }
 
-/* Dark overlay */
-.Hero::before {
-  content: "";
+.hero-left {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  left: 80px;
+  bottom: 60px;
 }
 
+.subtitle {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+.subtitle:hover {
+  color: #d1b652;
+  transition: color 0.5s ease;
+}
+.Based {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+.Based:hover {
+  color: #d1b652;
+  transition: color 0.5s ease;
+}
 .Hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 1000px;
+  text-align: right;
 }
 
-.Hero h4 {
-  color: #fdb913;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 3px;
+.Hero-content h1 {
+  font-size: clamp(120px, 18vw, 240px);
+  color: #ffffff;
+  margin-bottom: 0;
+  font-weight: lighter;
+  line-height: 0.85;
+  font-family: "Permanent Marker", cursive;
+}
+.Hero-content h1:hover {
+  color: #d1b652;
+  transition: color 0.5s ease;
+}
+.About {
+  color: #ffffff;
+  justify-content: flex-start;
+  padding: 0 60px;
+  font-family: "permanent marker", cursive;
+}
+.About h2 {
+  font-size: clamp(60px, 10vw, 80px);
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  color: #fff;
-  text-shadow:
-    0 0 10px #fff,
-    0 0 20px #ffd700,
-    0 0 30px #ffa500,
-    0 0 40px #ff8c00,
-    0 0 50px #ff6600;
-}
-
-.Hero h1 {
-  font-family: "Caveat", cursive;
-  font-size: 120px;
-  color: rgba(255, 255, 255, 0.646);
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  line-height: 1.1;
-  font-weight: 400;
-}
-
-.Hero h1 .highlight {
-  color: #fdb913;
-  display: block;
-}
-
-.Hero h5 {
-  font-family: "Doto", sans-serif;
-  font-size: 24px;
-  color: #fdb913;
-  font-weight: 300;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
-
-.Hero p {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1.8;
-  margin-bottom: 100px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-}
-
-/* CTA Button */
-.btn {
-  background-color: #fdb913;
-  color: #000;
-  padding: 18px 40px;
-  border: none;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family: "Bebas Neue", sans-serif;
-  margin-bottom: 20px;
-}
-
-.btn:hover {
-  background-color: #ef0606;
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(253, 185, 19, 0.5);
-}
-
-/* Bottom Stats Section */
-.Hero h5:last-child {
-  margin-bottom: 0px;
-  margin-top: 80px;
   display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    padding: 0 20px;
-  }
-
-  .nav-links {
-    gap: 20px;
-    font-size: 14px;
-  }
-
-  .Hero h1 {
-    font-size: 60px;
-  }
-
-  .Hero h5 {
-    font-size: 18px;
-  }
-
-  .Hero p {
-    font-size: 16px;
-  }
+  gap: 20px;
 }
