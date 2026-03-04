@@ -38,6 +38,7 @@ nav {
   margin-right: 10px;
   background-color: transparent;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -52,14 +53,13 @@ nav {
   font-weight: 400;
   letter-spacing: 1px;
   transition: color 0.3s ease;
-  font-family: "jura", sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 .nav-links li a:hover {
   color: #d1b652;
 }
 
-/* Book a Meeting Button */
 .btn-link {
   background-color: #ffffff;
   color: #000000;
@@ -77,23 +77,53 @@ nav {
   box-shadow: 0 8px 20px rgba(253, 185, 19, 0.4);
   color: #000;
 }
-/*herosection*/
-/* herosection */
+
+/* ========== HERO SECTION ========== */
 .Hero {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   min-height: 100vh;
   padding: 0 80px;
-  max-width: 1400px;
-  margin: 0 auto;
-  position: relative;
+  padding-bottom: 1%;
+  width: 100%;
 }
 
 .hero-left {
-  position: absolute;
-  left: 80px;
-  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero-content {
+  text-align: left;
+}
+
+.Hero-content h1 {
+  font-size: clamp(200px, 18vw, 340px);
+  color: #ffffff;
+  margin-bottom: 0;
+  font-weight: lighter;
+  line-height: 0.85;
+  font-family: "Permanent Marker", cursive;
+}
+
+.Hero-content h1:hover {
+  color: #d1b652;
+  transition: color 0.3s ease;
+}
+
+.Hero-content h2 {
+  font-size: clamp(120px, 18vw, 240px);
+  color: #d1b652;
+  margin-bottom: 0;
+  font-weight: lighter;
+  line-height: 0.85;
+  font-family: "Permanent Marker", cursive;
+}
+
+.Hero-content h2:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
 }
 
 .subtitle {
@@ -103,49 +133,35 @@ nav {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.5px;
+  margin-top: 16px;
 }
-.subtitle:hover {
-  color: #d1b652;
-  transition: color 0.5s ease;
-}
+
 .Based {
   font-family: "Jura", sans-serif;
   font-size: 20px;
-  color: #555;
+  color: #d1b652;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.5px;
 }
-.Based:hover {
-  color: #d1b652;
-  transition: color 0.5s ease;
-}
-.Hero-content {
-  text-align: right;
-}
 
-.Hero-content h1 {
-  font-size: clamp(120px, 18vw, 240px);
-  color: #ffffff;
-  margin-bottom: 0;
-  font-weight: lighter;
-  line-height: 0.85;
-  font-family: "Permanent Marker", cursive;
-}
-.Hero-content h1:hover {
-  color: #d1b652;
-  transition: color 0.5s ease;
-}
+/* ========== ABOUT SECTION ========== */
 .About {
   color: #ffffff;
   justify-content: flex-start;
   padding: 0 60px;
-  font-family: "permanent marker", cursive;
+  font-family: "Permanent Marker", cursive;
 }
+
 .About h2 {
   font-size: clamp(60px, 10vw, 80px);
   margin-bottom: 20px;
   align-items: center;
   display: flex;
   gap: 20px;
+}
+
+.About h2:hover {
+  color: #d1b652;
+  transition: color 0.3s ease;
 }
